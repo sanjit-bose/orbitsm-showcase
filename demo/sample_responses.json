@@ -1,0 +1,20 @@
+{
+  "aiRcaDraft": {
+    "workItemId": "OPS-INC-1001",
+    "probableCause": "Authentication service latency and token validation retries",
+    "confidence": "medium",
+    "recommendedActions": [
+      "Review recent authentication service changes",
+      "Check failed login trend by region and application",
+      "Publish temporary workaround if failures continue",
+      "Create problem record if pattern repeats"
+    ]
+  },
+  "dashboardSummary": {
+    "openIncidents": 140,
+    "slaCompliance": "91.4%",
+    "mttrHours": 7.8,
+    "approvalBacklog": 5,
+    "governanceCoverage": "87%"
+  }
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "OPS-INC-1001",
+    "project": "Operations Platform",
+    "priority": "HIGH",
+    "status": "INVESTIGATING",
+    "category": "Authentication",
+    "slaStatus": "AT_RISK",
+    "summary": "Application login failures impacting a subset of users"
+  },
+  {
+    "id": "HR-REQ-2044",
+    "project": "Employee Services",
+    "priority": "MEDIUM",
+    "status": "IN_PROGRESS",
+    "category": "Access Request",
+    "slaStatus": "ON_TRACK",
+    "summary": "New hire access package awaiting manager approval"
+  },
+  {
+    "id": "FIN-TASK-3320",
+    "project": "Finance Shared Services",
+    "priority": "LOW",
+    "status": "OPEN",
+    "category": "Knowledge Update",
+    "slaStatus": "ON_TRACK",
+    "summary": "Update month-end reconciliation support article"
+  }
+]

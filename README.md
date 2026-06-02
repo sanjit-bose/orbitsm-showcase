@@ -1,0 +1,176 @@
+# OrbitSM
+
+![Showcase](https://img.shields.io/badge/repository-public_showcase-blue)
+![No Source Code](https://img.shields.io/badge/source_code-not_included-critical)
+![Architecture](https://img.shields.io/badge/architecture-enterprise_ITSM-green)
+![AI](https://img.shields.io/badge/AI-RCA_%7C_SLA_%7C_KB-purple)
+![Security](https://img.shields.io/badge/security-RBAC_%7C_HTTPS_%7C_Audit-orange)
+
+## Enterprise IT Service Management Platform
+
+OrbitSM is an enterprise IT Service Management platform designed for project-aware incident operations, workflow governance, SLA visibility, AI-assisted service intelligence, and executive reporting.
+
+This public repository is a **showcase repository only**. It demonstrates product architecture, capabilities, screenshots, and engineering practices while intentionally excluding proprietary source code, environment files, schemas, credentials, AI prompts, and commercial implementation details.
+
+## Product Overview
+
+OrbitSM brings incidents, service requests, tasks, problems, changes, SLA controls, Kanban operations, AI insights, customer/project scoping, and executive dashboards into a single service-management workspace.
+
+The product is designed for organizations that need:
+
+- Centralized ITSM operations across multiple projects and customer accounts.
+- Role-based visibility for employees, leads, managers, executives, customers, and admins.
+- AI-assisted triage, root cause analysis, similar-incident discovery, and knowledge generation.
+- Production-ready deployment patterns with HTTPS, reverse proxy routing, connection pooling, and backend-only secrets.
+- Audit-ready governance across incident, task, request, problem, and change lifecycles.
+
+## Key Features
+
+- Project-aware incident, task, service request, problem, and change management.
+- Role-based access control and customer/account-aware visibility.
+- SLA definition, tracking, breach indicators, and operational health metrics.
+- Kanban board with workflow columns, prioritization, active situations, and ownership signals.
+- AI-assisted RCA, categorization, similar-incident discovery, KEDB/KB generation, and service health insights.
+- Problem management lifecycle from investigation to RCA, known error, workaround, fix, and closure.
+- Change management lifecycle including approval, scheduling, implementation, rollback, and closure.
+- Executive dashboards for SLA, MTTR, backlog, governance coverage, risk, and workload.
+- Admin-led project, user, customer contact, email, RBAC, and deployment configuration.
+- Dockerized deployment patterns with HTTPS reverse proxy, private service networking, PostgreSQL, and API hardening.
+
+## Architecture
+
+![Architecture](diagrams/architecture.png)
+
+At a high level, OrbitSM uses a modern web architecture:
+
+- **Frontend:** Next.js user interface.
+- **Backend:** FastAPI service layer.
+- **Runtime:** Gunicorn with Uvicorn workers.
+- **Database:** PostgreSQL with SQLAlchemy connection pooling.
+- **Edge:** Nginx reverse proxy, HTTPS, HSTS, and security headers.
+- **AI:** Service intelligence layer for RCA, similarity, risk, categorization, and reporting signals.
+
+See [Architecture Overview](docs/ARCHITECTURE.md) for details.
+
+## Technology Stack
+
+| Layer | Technology |
+| --- | --- |
+| Frontend | Next.js, React |
+| Backend | Python, FastAPI |
+| Application Runtime | Gunicorn, Uvicorn |
+| Database | PostgreSQL |
+| Data Access | SQLAlchemy connection pooling |
+| Deployment | Docker, Docker Compose |
+| Edge | Nginx reverse proxy, HTTPS |
+| Security | Authentication, RBAC, project/customer scoping, audit logging |
+| AI Capabilities | RCA assistance, categorization, similarity, situation intelligence, KB generation |
+
+## AI Capabilities
+
+OrbitSM includes AI-assisted operational intelligence for:
+
+- Root cause analysis support.
+- Similar incident discovery.
+- SLA risk and breach-prone work identification.
+- Situation grouping and recurring-pattern detection.
+- AI-generated knowledge article and KEDB drafts.
+- Service health insights for dashboards and leadership reporting.
+
+![AI Insights](screenshots/ai_insights.png)
+
+## Incident Management
+
+Incident management provides operational intake, prioritization, ownership, SLA tracking, attachments, comments, status transitions, AI signals, and linkage to downstream problem/change governance.
+
+![Incidents](screenshots/incidents.png)
+
+## Problem Management
+
+Problem management supports structured RCA, known error tracking, workaround capture, permanent fix planning, linked incident clusters, and change creation for remediation.
+
+## Change Management
+
+Change management supports risk-aware approval, L1/CAB review, scheduling, implementation, rollback readiness, failure/rejection handling, and closure evidence.
+
+## Workflow Automation
+
+OrbitSM models work through controlled lifecycle states, assignment rules, project reassignment, notifications, audit events, and Kanban-driven operational movement.
+
+![Workflow](diagrams/workflow.png)
+
+## Analytics & Reporting
+
+Dashboards and reports provide service-level visibility across SLA, MTTR, open risk, workload, governance exceptions, problem maturity, approval health, and relationship coverage.
+
+![Dashboard](screenshots/dashboard.png)
+
+![Reports](screenshots/reports.png)
+
+## Security Model
+
+OrbitSM is designed around secure-by-default enterprise patterns:
+
+- Login required for protected views and APIs.
+- Role-based access control.
+- Project and customer account scoping.
+- Manager/team hierarchy visibility.
+- Backend authorization enforcement.
+- HTTPS edge termination.
+- Private backend/database network.
+- Backend-only secrets.
+- Audit events for workflow and admin actions.
+
+See [Security Overview](docs/SECURITY_OVERVIEW.md).
+
+## Deployment Options
+
+OrbitSM supports multiple deployment models:
+
+- Hardened HTTPS deployment with reverse proxy and private backend/database services.
+- Blank database installation for a clean server deployment.
+- Local demo/development deployment for product evaluation.
+
+![Deployment](diagrams/deployment.png)
+
+See [Deployment Overview](docs/DEPLOYMENT_OVERVIEW.md).
+
+## Screenshots
+
+| Area | Preview |
+| --- | --- |
+| Dashboard | ![Dashboard](screenshots/dashboard.png) |
+| Incidents | ![Incidents](screenshots/incidents.png) |
+| Kanban | ![Kanban](screenshots/kanban.png) |
+| AI Insights | ![AI Insights](screenshots/ai_insights.png) |
+| AI Assistant Concept | ![Chatbot](screenshots/chatbot.png) |
+| Reports | ![Reports](screenshots/reports.png) |
+
+## Future Roadmap
+
+Planned direction includes:
+
+- Deeper AI copilot workflows for service desk, problem managers, and change approvers.
+- More advanced customer portal experiences.
+- Observability integrations for event-driven incident generation.
+- Expanded reporting exports for leadership and compliance reviews.
+- SSO/OAuth enterprise identity integrations.
+- Advanced audit evidence packs for regulated environments.
+
+See [Product Roadmap](docs/PRODUCT_ROADMAP.md).
+
+## Repository Boundary
+
+This repository does **not** include:
+
+- Backend source code.
+- Frontend source code.
+- Environment files.
+- Docker Compose files.
+- Database schema migrations.
+- Credentials or secrets.
+- AI prompts.
+- Proprietary algorithms.
+- Commercial implementation details.
+
+Included demo files are generic examples only and are not functional product code.

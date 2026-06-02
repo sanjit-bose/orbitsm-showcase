@@ -1,0 +1,34 @@
+{
+  "description": "Generic, non-functional examples for public showcase only.",
+  "requests": [
+    {
+      "name": "Create incident",
+      "method": "POST",
+      "path": "/api/incidents",
+      "body": {
+        "projectCode": "OPS",
+        "title": "Application login failures",
+        "priority": "HIGH",
+        "category": "Authentication",
+        "description": "Multiple users are reporting intermittent login failures."
+      }
+    },
+    {
+      "name": "Move work item",
+      "method": "POST",
+      "path": "/api/workflow/move",
+      "body": {
+        "workItemId": "OPS-INC-1001",
+        "targetState": "INVESTIGATING"
+      }
+    },
+    {
+      "name": "Request AI RCA draft",
+      "method": "POST",
+      "path": "/api/ai/rca",
+      "body": {
+        "workItemId": "OPS-INC-1001"
+      }
+    }
+  ]
+}
