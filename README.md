@@ -130,10 +130,19 @@ OrbitSM supports multiple deployment models:
 - Hardened HTTPS deployment with reverse proxy and private backend/database services.
 - Blank database installation for a clean server deployment.
 - Local demo/development deployment for product evaluation.
+- Private Docker-based evaluation package for controlled demonstrations.
 
 ![Deployment](diagrams/deployment.png)
 
 See [Deployment Overview](docs/DEPLOYMENT_OVERVIEW.md).
+
+## Private Docker Demo Package
+
+OrbitSM is designed to run as a containerized platform with web, API, database, reverse proxy, and notification services.
+
+The Docker image/package is **not published in this public showcase repository** because it may contain proprietary implementation layers, deployment topology, runtime configuration, and commercial IP. A sanitized or private evaluation package can be shared separately for controlled demonstrations.
+
+This public repository focuses on architecture, product capabilities, screenshots, engineering practices, and product vision without exposing commercial source code.
 
 ## Screenshots
 
@@ -167,6 +176,7 @@ This repository does **not** include:
 - Frontend source code.
 - Environment files.
 - Docker Compose files.
+- Docker image layers or installation bundles.
 - Database schema migrations.
 - Credentials or secrets.
 - AI prompts.
