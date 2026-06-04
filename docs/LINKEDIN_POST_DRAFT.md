@@ -1,23 +1,38 @@
 # LinkedIn Post Draft
 
-I recently built **OrbitSM**, an AI-enabled Enterprise IT Service Management platform designed around incident, service request, task, problem, change, SLA, RBAC, and project/customer-aware service operations.
+I have been building **OrbitSM**, an AI-enabled Enterprise IT Service Management platform for teams that need more than a ticket list.
 
-The public showcase repository is now available here:
+OrbitSM brings together:
+
+- Multi-project incident, task, and service request operations.
+- Problem and change governance with lifecycle controls.
+- SLA tracking, breach visibility, dashboards, and Kanban execution.
+- AI-assisted RCA, similar incident discovery, situation intelligence, and KB/KEDB drafting.
+- Customer/account-aware access for internal teams, customer admins, managers, and executives.
+
+The latest product hardening adds configurable enterprise access governance:
+
+- **RBAC** for role, account, and explicit project/team assignment based access.
+- **ABAC** for account, requester, submitter, assignee, customer contact, project, and manager hierarchy attributes.
+- **Hybrid** mode where both models can work together.
+
+That flexibility matters in real service-management environments. HR, finance, IT operations, customer support, and executive views should not all expose data the same way.
+
+I also created a public-safe showcase repository with architecture, screenshots, feature documentation, security overview, deployment model, sample payloads, and roadmap material:
 
 https://github.com/sanjit-bose/orbitsm-showcase
 
-The repository highlights:
+The commercial source code, Docker image layers, environment files, database migrations, credentials, AI prompts, and proprietary implementation details are intentionally not public.
 
-- Product architecture and deployment model
-- AI-assisted RCA, service intelligence, and knowledge generation
-- Incident, problem, and change governance
-- Kanban and SLA-driven operations
-- Role-based/project-aware access model
-- Security and production hardening concepts
-- Screenshots, diagrams, and product roadmap
+Suggested screenshot carousel:
 
-The commercial source code and Docker image package are intentionally not public. The showcase is designed for recruiters, technology leaders, and potential customers to understand the architecture, product thinking, and engineering depth without exposing proprietary IP.
+1. `screenshots/linkedin-campaign/01-projects.png`
+2. `screenshots/linkedin-campaign/02-dashboard.png`
+3. `screenshots/linkedin-campaign/03-kanban.png`
+4. `screenshots/linkedin-campaign/04-incidents.png`
+5. `screenshots/linkedin-campaign/05-tasks.png`
+6. `screenshots/linkedin-campaign/08-aiops.png`
 
-This has been a hands-on build across product design, backend architecture, frontend UX, workflow governance, AI-assisted operations, Dockerized deployment, documentation, testing, and public-safe product storytelling.
+This project has been a full product-engineering exercise across architecture, UX, backend workflow design, AI-assisted operations, security hardening, Dockerized deployment, testing, documentation, and public product storytelling.
 
-#AI #ITSM #ServiceManagement #AIOps #ProductEngineering #FastAPI #NextJS #Docker #PostgreSQL #RBAC #IncidentManagement #ChangeManagement
+#AI #ITSM #AIOps #ServiceManagement #ProductEngineering #RBAC #ABAC #FastAPI #NextJS #Docker #PostgreSQL #IncidentManagement #ChangeManagement #EnterpriseArchitecture

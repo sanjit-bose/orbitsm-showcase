@@ -4,7 +4,7 @@
 ![No Source Code](https://img.shields.io/badge/source_code-not_included-critical)
 ![Architecture](https://img.shields.io/badge/architecture-enterprise_ITSM-green)
 ![AI](https://img.shields.io/badge/AI-RCA_%7C_SLA_%7C_KB-purple)
-![Security](https://img.shields.io/badge/security-RBAC_%7C_HTTPS_%7C_Audit-orange)
+![Security](https://img.shields.io/badge/security-RBAC_%7C_ABAC_%7C_HTTPS-orange)
 
 ## Enterprise IT Service Management Platform
 
@@ -19,7 +19,7 @@ OrbitSM brings incidents, service requests, tasks, problems, changes, SLA contro
 The product is designed for organizations that need:
 
 - Centralized ITSM operations across multiple projects and customer accounts.
-- Role-based visibility for employees, leads, managers, executives, customers, and admins.
+- Configurable RBAC, ABAC, or Hybrid visibility for employees, leads, managers, executives, customers, and admins.
 - AI-assisted triage, root cause analysis, similar-incident discovery, and knowledge generation.
 - Production-ready deployment patterns with HTTPS, reverse proxy routing, connection pooling, and backend-only secrets.
 - Audit-ready governance across incident, task, request, problem, and change lifecycles.
@@ -27,14 +27,14 @@ The product is designed for organizations that need:
 ## Key Features
 
 - Project-aware incident, task, service request, problem, and change management.
-- Role-based access control and customer/account-aware visibility.
+- Configurable access governance with RBAC, ABAC, and Hybrid modes for customer/account, hierarchy, project, requester, submitter, and assignee visibility.
 - SLA definition, tracking, breach indicators, and operational health metrics.
 - Kanban board with workflow columns, prioritization, active situations, and ownership signals.
 - AI-assisted RCA, categorization, similar-incident discovery, KEDB/KB generation, and service health insights.
 - Problem management lifecycle from investigation to RCA, known error, workaround, fix, and closure.
 - Change management lifecycle including approval, scheduling, implementation, rollback, and closure.
 - Executive dashboards for SLA, MTTR, backlog, governance coverage, risk, and workload.
-- Admin-led project, user, customer contact, email, RBAC, and deployment configuration.
+- Admin-led project, user, customer contact, email, RBAC/ABAC, and deployment configuration.
 - Dockerized deployment patterns with HTTPS reverse proxy, private service networking, PostgreSQL, and API hardening.
 
 ## Architecture
@@ -63,7 +63,7 @@ See [Architecture Overview](docs/ARCHITECTURE.md) for details.
 | Data Access | SQLAlchemy connection pooling |
 | Deployment | Docker, Docker Compose |
 | Edge | Nginx reverse proxy, HTTPS |
-| Security | Authentication, RBAC, project/customer scoping, audit logging |
+| Security | Authentication, RBAC, ABAC, project/customer scoping, audit logging |
 | AI Capabilities | RCA assistance, categorization, similarity, situation intelligence, KB generation |
 
 ## AI Capabilities
@@ -113,6 +113,8 @@ OrbitSM is designed around secure-by-default enterprise patterns:
 
 - Login required for protected views and APIs.
 - Role-based access control.
+- Attribute-based access control for account, project, requester, submitter, assignee, customer contact, and manager hierarchy attributes.
+- Hybrid access mode where RBAC and ABAC can be evaluated together.
 - Project and customer account scoping.
 - Manager/team hierarchy visibility.
 - Backend authorization enforcement.
@@ -154,6 +156,9 @@ This public repository focuses on architecture, product capabilities, screenshot
 | AI Insights | ![AI Insights](screenshots/ai_insights.png) |
 | AI Assistant Concept | ![Chatbot](screenshots/chatbot.png) |
 | Reports | ![Reports](screenshots/reports.png) |
+
+Additional LinkedIn-ready screenshots are available in [`screenshots/linkedin-campaign`](screenshots/linkedin-campaign).
+See [Screenshot Guide](docs/SCREENSHOT_GUIDE.md) for a recommended carousel order.
 
 ## Future Roadmap
 

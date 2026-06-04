@@ -85,10 +85,21 @@ The recommended deployment model uses:
 Security is handled through layered controls:
 
 - Authentication for protected application views and APIs.
-- RBAC and project/customer data scoping.
+- Configurable RBAC, ABAC, or Hybrid access governance.
+- Project/customer data scoping.
+- Account, requester, submitter, assignee, customer contact, and hierarchy-aware authorization.
 - Backend validation of workflow authority.
 - Private backend/database network exposure.
 - Backend-only secrets.
 - HTTPS and security headers.
 - Audit logging for administrative and workflow actions.
 
+## Access-Governance Architecture
+
+OrbitSM supports multiple access models because different customers operate differently:
+
+- Internal IT teams may prefer RBAC with project membership and manager hierarchy.
+- Customer-facing service desks may prefer ABAC where account, requester, assignee, and customer-contact attributes matter.
+- Larger enterprises may prefer Hybrid mode so assigned access and attribute-driven access work together.
+
+The policy decision is enforced server-side and then reflected consistently across dashboards, Kanban, incidents, tasks, requests, and project views.

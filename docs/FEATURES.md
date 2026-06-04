@@ -44,7 +44,16 @@
 - Project code and SLA configuration.
 - Team member assignment.
 - Customer contact assignment.
-- User access restricted by project, role, hierarchy, and customer/account context.
+- User access restricted by project, role, hierarchy, customer/account context, requester, submitter, assignee, and customer contact attributes.
+- Configurable access-governance mode: RBAC, ABAC, or Hybrid.
+- Initial setup support so customer/admin users can select the access model that matches their organization.
+
+## Access Governance
+
+- **RBAC:** Role, account scope, and explicit project/team membership drive visibility.
+- **ABAC:** Account, project, requester, submitter, assignee, customer contact, and manager hierarchy attributes drive visibility.
+- **Hybrid:** RBAC and ABAC are evaluated together so either policy can grant access.
+- Designed for internal organizations, multi-customer setups, customer admins, project teams, managers, and executive views.
 
 ## Analytics and Reporting
 
@@ -63,4 +72,3 @@
 - KEDB and KB article drafting.
 - Download-ready knowledge artifacts.
 - AI signals for operational dashboards.
-

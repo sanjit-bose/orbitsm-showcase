@@ -10,14 +10,26 @@ Protected application views and APIs require authenticated access. The platform 
 
 ## Authorization
 
-Authorization is based on:
+Authorization can be configured for RBAC, ABAC, or Hybrid evaluation.
+
+RBAC-style authorization is based on:
 
 - Role.
 - Project membership.
 - Customer/account context.
+- Admin privileges.
+
+ABAC-style authorization is based on attributes such as:
+
+- Account/customer organization.
+- Project association.
+- Submitter/requester identity.
+- Assignee identity.
+- Customer contact relationship.
 - Management hierarchy.
 - Work-item ownership or requester relationship.
-- Admin privileges.
+
+Hybrid mode evaluates both RBAC and ABAC so enterprise customers can combine strict role/project assignment with account and identity-aware access.
 
 ## Project and Customer Scoping
 
@@ -65,9 +77,8 @@ The hardened deployment pattern includes:
 The platform is designed to support audit events for:
 
 - User/account administration.
-- Project and RBAC updates.
+- Project, RBAC, ABAC, and access-mode updates.
 - Workflow transitions.
 - Assignment/reassignment.
 - Comments and notifications.
 - Import and configuration actions.
-
