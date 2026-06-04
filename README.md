@@ -156,6 +156,8 @@ This public repository focuses on architecture, product capabilities, screenshot
 | AI Insights | ![AI Insights](screenshots/ai_insights.png) |
 | AI Assistant Concept | ![Chatbot](screenshots/chatbot.png) |
 | Reports | ![Reports](screenshots/reports.png) |
+| RBAC / ABAC Access Model | ![RBAC ABAC Access Model](screenshots/rbac-abac-access-model.png) |
+| RBAC / ABAC Deployment Setting | ![RBAC ABAC Deployment Setting](screenshots/rbac-abac-deployment-settings.png) |
 
 Additional LinkedIn-ready screenshots are available in [`screenshots/linkedin-campaign`](screenshots/linkedin-campaign).
 See [Screenshot Guide](docs/SCREENSHOT_GUIDE.md) for a recommended carousel order.

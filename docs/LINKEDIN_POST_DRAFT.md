@@ -32,6 +32,8 @@ Suggested screenshot carousel:
 4. `screenshots/linkedin-campaign/04-incidents.png`
 5. `screenshots/linkedin-campaign/05-tasks.png`
 6. `screenshots/linkedin-campaign/08-aiops.png`
+7. `screenshots/linkedin-campaign/10-rbac-abac-access-model.png`
+8. `screenshots/linkedin-campaign/11-rbac-abac-deployment-settings.png`
 
 This project has been a full product-engineering exercise across architecture, UX, backend workflow design, AI-assisted operations, security hardening, Dockerized deployment, testing, documentation, and public product storytelling.
 
