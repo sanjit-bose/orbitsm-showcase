@@ -12,6 +12,18 @@ OrbitSM is an enterprise IT Service Management platform designed for project-awa
 
 This public repository is a **showcase repository only**. It demonstrates product architecture, capabilities, screenshots, and engineering practices while intentionally excluding proprietary source code, environment files, schemas, credentials, AI prompts, and commercial implementation details.
 
+## Public Showcase Site
+
+This repository includes a public-safe static showcase page in [index.html](index.html). It can be published through GitHub Pages from the repository root.
+
+Expected GitHub Pages URL after enabling Pages:
+
+```text
+https://sanjit-bose.github.io/orbitsm-showcase/
+```
+
+See [SEO and Indexing Plan](docs/SEO_AND_INDEXING_PLAN.md) for Google Search Console and indexing steps.
+
 ## Product Overview
 
 OrbitSM brings incidents, service requests, tasks, problems, changes, SLA controls, Kanban operations, AI insights, customer/project scoping, and executive dashboards into a single service-management workspace.
@@ -27,6 +39,7 @@ The product is designed for organizations that need:
 ## Key Features
 
 - Project-aware incident, task, service request, problem, and change management.
+- OrbitSM incident management, OrbitSM AI-assisted RCA, OrbitSM situation intelligence, OrbitSM service health dashboards, and OrbitSM ITSM automation.
 - Configurable access governance with RBAC, ABAC, and Hybrid modes for customer/account, hierarchy, project, requester, submitter, and assignee visibility.
 - SLA definition, tracking, breach indicators, and operational health metrics.
 - Kanban board with workflow columns, prioritization, active situations, and ownership signals.
@@ -174,6 +187,13 @@ Planned direction includes:
 - Advanced audit evidence packs for regulated environments.
 
 See [Product Roadmap](docs/PRODUCT_ROADMAP.md).
+
+## Public Growth Assets
+
+- [LinkedIn Project Entry](docs/LINKEDIN_PROJECT_ENTRY.md)
+- [SEO and Indexing Plan](docs/SEO_AND_INDEXING_PLAN.md)
+- [LinkedIn Post Draft](docs/LINKEDIN_POST_DRAFT.md)
+- [Screenshot Guide](docs/SCREENSHOT_GUIDE.md)
 
 ## Repository Boundary
 
