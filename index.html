@@ -127,6 +127,15 @@
       box-shadow: 0 20px 70px rgba(0, 0, 0, 0.32);
       background: #020617;
     }
+    .demo-video {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid rgba(103, 232, 249, 0.34);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.38);
+      background: #020617;
+      display: block;
+      margin-top: 22px;
+    }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
     .card {
       background: rgba(15, 27, 45, 0.86);
@@ -152,6 +161,7 @@
     <div class="brand"><span class="mark">OSM</span> OrbitSM</div>
     <div class="links">
       <a href="#features">Features</a>
+      <a href="#demo">Demo</a>
       <a href="#ai">AI</a>
       <a href="#security">Security</a>
       <a href="#screenshots">Screenshots</a>
@@ -174,6 +184,17 @@
       <img class="hero-shot" src="screenshots/dashboard.png" alt="OrbitSM dashboard screenshot">
     </div>
   </header>
+
+  <section id="demo" class="band">
+    <div class="eyebrow">Product Demo</div>
+    <h2>OrbitSM capability walkthrough</h2>
+    <p>A public-safe narrated demo covering project-aware operations, dashboards, Kanban, situation intelligence, incidents, tasks, AI-assisted RCA, RBAC/ABAC governance, admin configuration, and hardened deployment patterns.</p>
+    <video class="demo-video" controls preload="metadata" poster="demo/video/orbitsm-demo-poster.png">
+      <source src="demo/video/orbitsm-demo.mp4" type="video/mp4">
+      <a href="demo/video/orbitsm-demo.mp4">Download the OrbitSM demo video</a>
+    </video>
+    <p><a href="demo/video/orbitsm-demo-transcript.txt">Read the demo transcript</a></p>
+  </section>
 
   <section id="features">
     <div class="eyebrow">Product Capabilities</div>

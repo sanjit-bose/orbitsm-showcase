@@ -24,6 +24,16 @@ https://sanjit-bose.github.io/orbitsm-showcase/
 
 See [SEO and Indexing Plan](docs/SEO_AND_INDEXING_PLAN.md) for Google Search Console and indexing steps.
 
+## Demo Video
+
+The showcase site includes a public-safe narrated demo video:
+
+```text
+demo/video/orbitsm-demo.mp4
+```
+
+The video covers project-aware operations, dashboards, Kanban, situation intelligence, incident and task execution, AI-assisted service intelligence, RBAC/ABAC governance, admin configuration, and hardened deployment patterns. A transcript is available at [demo/video/orbitsm-demo-transcript.txt](demo/video/orbitsm-demo-transcript.txt).
+
 ## Product Overview
 
 OrbitSM brings incidents, service requests, tasks, problems, changes, SLA controls, Kanban operations, AI insights, customer/project scoping, and executive dashboards into a single service-management workspace.
