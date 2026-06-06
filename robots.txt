@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://sanjit-bose.github.io/orbitsm-showcase/sitemap.xml
+Sitemap: https://sanjit-bose.github.io/orbitsm-showcase/sitemap.txt
