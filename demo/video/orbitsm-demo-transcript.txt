@@ -1,38 +1,67 @@
-OrbitSM Demo Video Transcript
+OrbitSM Demo Review Cut V3 Transcript
 
 01. OrbitSM
-Welcome to OrbitSM, an AI enabled enterprise service management and governance platform built for modern, project aware operations.
+Meet OrbitSM. A modern IT service management platform for teams that need more than a ticket queue. It brings operational flow, governance, intelligence, and resilience into one clean workspace.
 
-02. Unified service workspace
-OrbitSM brings incidents, service requests, tasks, problems, changes, service level agreements, and executive reporting into one workspace.
+02. Unified Service Workspace
+OrbitSM connects the core service management modules. Incidents, service requests, project tasks, problems, changes, SLA health, and executive reports are visible from one product experience.
 
-03. Project-aware operations
-Each project has its own operational context. Dashboards, Kanban boards, tickets, tasks, and SLA signals follow the selected project automatically.
+03. Project Context
+A user can belong to multiple projects and select the project they want to work in. Once selected, dashboards, Kanban, incidents, tasks, service requests, and SLA views follow that project context.
 
-04. Service health dashboards
-The dashboard gives leaders and operations teams a live view of workload, SLA posture, backlog, ownership, and service health across the environment.
+04. Service Health Dashboards
+The dashboard gives teams a fast operational readout: workload, open items, SLA compliance, aging work, breach risk, ownership, and service pressure, without forcing leaders to inspect every record.
 
-05. Kanban lifecycle execution
-The Kanban view supports lifecycle execution across new, acknowledged, investigating, mitigating, monitoring, resolved, and closed stages.
+05. Lifecycle Kanban
+The Kanban view turns tickets into execution. Teams can follow work through intake, acknowledgement, investigation, mitigation, monitoring, resolution, and closure, with priority and ownership visible.
 
-06. Situation intelligence
-Situation intelligence groups related events, highlights active operational patterns, and helps teams move from isolated tickets to service level response.
+06. Situation Intelligence
+Situation intelligence helps responders stop treating every ticket as isolated. Related signals can be grouped into active situations, making recurring patterns and service impact easier to manage.
 
-07. Incident and task execution
-Incident and task management support assignment, priority, lifecycle movement, comments, attachments, ownership, requester context, and SLA breach tracking.
+07. Incident Execution
+Incident execution supports assignment, priority, requester context, comments, attachments, lifecycle changes, SLA tracking, and project reassignment when work is opened under the wrong project.
 
-08. AI-assisted service intelligence
-AI assisted insights help with root cause analysis, similar incident discovery, risk signals, categorization, knowledge base drafts, and KEDB style recommendations.
+08. Tasks And Service Requests
+Tasks and service requests are kept separate from incidents while still following the same project and SLA model. This keeps operational incidents, fulfillment work, and internal project tasks clear.
 
-09. RBAC, ABAC and hybrid governance
-Access governance supports RBAC, ABAC, and hybrid models, so organizations can control visibility by role, project, customer account, requester, assignee, hierarchy, and policy attributes.
+09. Problem Management
+Problem management supports investigation, root cause analysis, known error capture, workaround tracking, remediation ownership, and closure evidence, so recurring incidents do not disappear into noise.
 
-10. Tenant and admin configuration
-Administrators can configure projects, users, customer contacts, SLA policies, email notifications, deployment host and port settings, and the access model used by the tenant.
+10. Change Governance
+Change governance supports approval, scheduling, implementation, rollback planning, and closure evidence. That gives change work a clear control path instead of ad hoc coordination.
 
-11. Hardened deployment model
-The hardened deployment approach uses HTTPS at the edge, an Nginx reverse proxy, private Docker networking, Gunicorn with Uvicorn workers, PostgreSQL, connection pooling, and backend only secrets.
+11. AI Service Intelligence
+The AI layer assists with root cause analysis, categorization, similar incident discovery, service risk signals, KEDB drafts, and knowledge base articles. It accelerates investigation without replacing operational judgment.
 
-12. Secure, resilient, extensible
-OrbitSM is designed as a secure, resilient, and extensible ITSM platform for enterprise operations, customer service delivery, governance, and AI assisted service intelligence.
+12. Access Governance
+Access governance supports role based access, attribute based access, and hybrid policy evaluation. Visibility can be shaped by role, project membership, customer account, requester, assignee, and manager hierarchy.
 
+13. Customer Tenant Model
+For customer facing deployments, the customer account sits above projects. Customer admins and contacts see scoped service data, while internal users retain project and hierarchy based operating views.
+
+14. Admin Configuration
+Administrators configure projects, project codes, users, customer contacts, initial passwords, SLA policies, email notifications, deployment host and port settings, and the selected access model.
+
+15. Secure Edge And Reverse Proxy
+At the edge, OrbitSM is designed for HTTPS. Nginx terminates secure traffic, applies security headers, routes the web interface to the frontend, routes API traffic to the backend, and keeps internal services private.
+
+16. Backend Runtime And Workflow Layer
+Behind the interface, FastAPI runs under Gunicorn with Uvicorn workers. The backend handles authentication, authorization, workflow validation, SLA calculations, audit events, notification triggers, and AI orchestration.
+
+17. Messaging And Queue Architecture
+For scale and resilience, ticket actions can emit events into a queue. Workers can process email notifications, automation jobs, AI enrichment, and retries without blocking the user request path.
+
+18. Database And Connection Pooling
+The data tier uses PostgreSQL behind a private service network. SQLAlchemy connection pooling helps reuse database connections efficiently, reduce connection churn, and stabilize API behavior under load.
+
+19. Security Model In Practice
+Security is enforced on the server side. Users authenticate first, APIs are scoped by RBAC, ABAC, or hybrid policy, secrets stay in backend configuration, and important workflow actions can be audited.
+
+20. Scalability And Load Strategy
+Capacity depends on workload, CPU, memory, database latency, AI calls, and notification volume. A tuned Gunicorn and Uvicorn deployment can support many concurrent users, then scale horizontally behind Nginx. Exact numbers should be proven with load tests for the target server and usage mix.
+
+21. Resilience Patterns
+The resilient posture combines reverse proxy health checks, worker restarts, retryable background work, private service networking, database backup planning, audit trails, and operational monitoring.
+
+22. OrbitSM
+OrbitSM is built around a simple product vision: service management should be project aware, customer ready, access governed, intelligence assisted, and resilient enough for real enterprise operations.
