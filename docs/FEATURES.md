@@ -42,6 +42,7 @@
 
 - Customer-friendly asset register and configuration item views.
 - Add Asset and Add CI quick actions for draft record capture.
+- View All and CSV export controls for the inventory experience.
 - Standard fields for name, type, owner, lifecycle status, location, and linked service.
 - Service relationship map for dependency and ownership context.
 - Guided import flow for asset and CI data.

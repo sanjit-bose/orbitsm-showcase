@@ -119,7 +119,7 @@ Change management supports risk-aware approval, L1/CAB review, scheduling, imple
 
 ## Assets & CMDB
 
-Assets & CMDB gives customers a familiar ITSM implementation model: asset register, configuration item views, ownership, lifecycle state, linked services, service maps, guided imports, and data-quality queues. The UX includes quick actions for Add Asset, Add CI, Import, and Service Map so customers can understand the capability from the page itself.
+Assets & CMDB gives customers a familiar ITSM implementation model: asset register, configuration item views, ownership, lifecycle state, linked services, service maps, guided imports, and data-quality queues. The UX includes quick actions for Add Asset, Add CI, Import, Service Map, View All, and CSV export so customers can understand the capability from the page itself. The showcase screenshot uses representative sample rows to illustrate the inventory model.
 
 ![Assets and CMDB](screenshots/assets-cmdb-customer-ux.png)
 
