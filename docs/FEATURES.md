@@ -38,6 +38,15 @@
 - Scheduling and implementation status.
 - Rollback and closure governance.
 
+## Assets And CMDB
+
+- Customer-friendly asset register and configuration item views.
+- Add Asset and Add CI quick actions for draft record capture.
+- Standard fields for name, type, owner, lifecycle status, location, and linked service.
+- Service relationship map for dependency and ownership context.
+- Guided import flow for asset and CI data.
+- Data quality queues for missing owners, missing locations, duplicates, stale records, unlinked services, and retired records still in use.
+
 ## Project and Customer Governance
 
 - Admin-created projects.

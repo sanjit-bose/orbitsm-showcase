@@ -36,7 +36,7 @@ The video covers project-aware operations, dashboards, Kanban, situation intelli
 
 ## Product Overview
 
-OrbitSM brings incidents, service requests, tasks, problems, changes, SLA controls, Kanban operations, AI insights, customer/project scoping, and executive dashboards into a single service-management workspace.
+OrbitSM brings incidents, service requests, tasks, problems, changes, Assets & CMDB, SLA controls, Kanban operations, AI insights, customer/project scoping, and executive dashboards into a single service-management workspace.
 
 The product is designed for organizations that need:
 
@@ -52,6 +52,7 @@ The product is designed for organizations that need:
 - OrbitSM incident management, OrbitSM AI-assisted RCA, OrbitSM situation intelligence, OrbitSM service health dashboards, and OrbitSM ITSM automation.
 - Configurable access governance with RBAC, ABAC, and Hybrid modes for customer/account, hierarchy, project, requester, submitter, and assignee visibility.
 - SLA definition, tracking, breach indicators, and operational health metrics.
+- Standardized Assets & CMDB with asset/CI draft actions, inventory, ownership, lifecycle, relationships, guided import, service impact, and data-quality queues.
 - Kanban board with workflow columns, prioritization, active situations, and ownership signals.
 - AI-assisted RCA, categorization, similar-incident discovery, KEDB/KB generation, and service health insights.
 - Problem management lifecycle from investigation to RCA, known error, workaround, fix, and closure.
@@ -116,6 +117,12 @@ Problem management supports structured RCA, known error tracking, workaround cap
 
 Change management supports risk-aware approval, L1/CAB review, scheduling, implementation, rollback readiness, failure/rejection handling, and closure evidence.
 
+## Assets & CMDB
+
+Assets & CMDB gives customers a familiar ITSM implementation model: asset register, configuration item views, ownership, lifecycle state, linked services, service maps, guided imports, and data-quality queues. The UX includes quick actions for Add Asset, Add CI, Import, and Service Map so customers can understand the capability from the page itself.
+
+![Assets and CMDB](screenshots/assets-cmdb-customer-ux.png)
+
 ## Workflow Automation
 
 OrbitSM models work through controlled lifecycle states, assignment rules, project reassignment, notifications, audit events, and Kanban-driven operational movement.
@@ -179,6 +186,8 @@ This public repository focuses on architecture, product capabilities, screenshot
 | AI Insights | ![AI Insights](screenshots/ai_insights.png) |
 | AI Assistant Concept | ![Chatbot](screenshots/chatbot.png) |
 | Reports | ![Reports](screenshots/reports.png) |
+| Assets & CMDB | ![Assets and CMDB](screenshots/assets-cmdb-customer-ux.png) |
+| Assets & CMDB Mobile | ![Assets and CMDB Mobile](screenshots/assets-cmdb-customer-ux-mobile.png) |
 | RBAC / ABAC Access Model | ![RBAC ABAC Access Model](screenshots/rbac-abac-access-model.png) |
 | RBAC / ABAC Deployment Setting | ![RBAC ABAC Deployment Setting](screenshots/rbac-abac-deployment-settings.png) |
 
